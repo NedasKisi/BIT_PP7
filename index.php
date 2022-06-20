@@ -26,6 +26,16 @@ include_once './Utilities/database.php'; //Connection to database and setup
         </div>
     </header>
 
+    <div class="container">
+        <?php
+        if ($path == 'people') {
+            include './Utilities/people.php'; // Loads people data
+        } else if ($path == 'projects') {
+            include './Utilities/projects.php'; // Loads projects data
+        }
+        ?>
+    </div>
+
 </body>
 
 </html>
