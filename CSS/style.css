@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.container {
+    max-width: 1300px;
+    padding: 20px 90px;
+    margin: auto;
+}
+header {
+    background-color: rgb(112, 114, 114);
+    box-shadow: 0 2px 4px #000;
+}
+
+header a{
+    color: #FFF;
+}
+
+header h1 {
+    color:rgb(255, 123, 15);
+}
+
+.nav-link:hover {
+    color:rgb(255, 123, 15);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.link-wrap {
+    display: flex;
+    align-items: center;
+}
+.link-wrap a {
+    display: inline-block;
+    padding: 10px 5px;
+}
+
+.link-wrap a:hover {
+    background-color: rgb(138, 139, 139);
+    border-radius: 5px;
+}
+
+.link-wrap a:active {
+    color:rgb(255, 123, 15);
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+table {
+    width: 100%;    
+}
+
+tr {
+    height: 40px;
+    padding: 10px 0;
+}
+
+th {
+    text-align: left;
+    color: rgb(112, 114, 114);
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+form {
+    margin-top: 15px;
+    border-top: 2px solid rgb(112, 114, 114);
+}
+
+button {
+    padding: 7px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: rgb(112, 114, 114);
+    border: none;
+    color: #FFF;
+}
+
+button:hover, button a:hover, a:hover {
+    cursor: pointer;
+    color:rgb(255, 123, 15);
+}
+
+.form-error {
+background-color: rgb(248, 15, 15);
+font-weight: bold;
+font-size:16px;
+display: flex;
+justify-content: center;
+color: #ffffff;
+}
+
+input[type="text" i] {
+    width: 200px;
+    margin: 0 5px;
+    height: 21px;
+}
+
+select{ 
+    width: 200px;
+    margin: 0 5px;
+    overflow:scroll;
+}
