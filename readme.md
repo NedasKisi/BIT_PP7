@@ -42,8 +42,9 @@ localhost/BIT_PP7
 - You can assign people to projects by selecting them from dropdown list or update projects by using multiselect.
 
 ```diff
- When updating projects to use multiselect press and hold CTRL button and left-click on names you want to add or remove from project.
- For Apple users press press and hold CMD button and left-click on names.
+ When updating projects to use multiselect press and hold CTRL button and left-click on names you want
+  to add or remove from project.
+ For Apple users press and hold CMD button and left-click on names.
 ```
 
 ## Project tasks
