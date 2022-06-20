@@ -30,6 +30,10 @@ include './Utilities/people_edit.php';
                     echo $row[array_keys($row)[$i]];
                     echo '</td>';
                 }
+                // Adding action buttons to each table entry
+                echo '<td>';
+                echo '<button><a href="?path=people&action=delete&id=' . $row['id'] . '">Delete</a></button></td>'; // Delete button
+                echo '</tr>';
             }
         }
         echo '<tr><td></td><td><button><a href="?path=people&action=add" class="add-btn">ADD NEW PERSON</a></button></td></tr>'; // Inserting add button at the last table row
@@ -69,5 +73,4 @@ if (isset($_GET['action']) and $_GET['action'] == 'add') { // ADD NEW PERSON FOR
         echo '<div class="form-error">Please create project first!</div>';
     }
 }
-
 ?>

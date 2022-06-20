@@ -2,6 +2,13 @@
 
 include_once './Utilities/database.php'; //Connection to database and setup
 
+// Table entry delete action (works for both: people and projects)
+if (isset($_GET['action']) && $_GET['action'] == 'delete') {
+    $sql = 'DELETE FROM ' . $_GET['path'] . ' WHERE id = ' . $_GET['id'];
+    $connection->query($sql);
+    header('location:./?path=' . $_GET['path']);
+    exit;
+}
 ?>
 
 <!DOCTYPE html>
@@ -35,7 +42,6 @@ include_once './Utilities/database.php'; //Connection to database and setup
         }
         ?>
     </div>
-
 </body>
 
 </html>

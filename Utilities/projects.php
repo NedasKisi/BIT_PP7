@@ -30,6 +30,10 @@ require './Utilities/projects_edit.php';
                     echo $row[array_keys($row)[$i]];
                     echo '</td>';
                 }
+                // Adding action buttons to each table entry
+                echo '<td>';
+                echo '<button><a href="?path=projects&action=delete&id=' . $row['id'] . '">Delete</a></button></td>'; // Delete button
+                echo '</tr>';
             }
         }
         echo '<tr><td></td><td><button><a href="?path=projects&action=add" class="add-btn">ADD NEW PROJECT</a></button></td></tr>'; // Inserting add button at the last table row
