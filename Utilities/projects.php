@@ -1,3 +1,7 @@
+<?php
+require './Utilities/projects_edit.php';
+?>
+
 <table>
     <thead>
         <tr>
@@ -28,6 +32,19 @@
                 }
             }
         }
+        echo '<tr><td></td><td><button><a href="?path=projects&action=add" class="add-btn">ADD NEW PROJECT</a></button></td></tr>'; // Inserting add button at the last table row
         ?>
     </tbody>
 </table>
+
+<?php
+if (isset($_GET['action']) && $_GET['action'] == 'add') { // ADD NEW PROJECT FORM
+    echo '<form method="POST">
+            <h3>Add new project</h3>
+            <label for="project_name">Project name:</label>
+            <input type="text" name="project_name" id="project_name" minlength="2" maxlength="35" size="10" required>
+            </select>
+            <button type="submit" name="add">Add</button>
+        </form>';
+}
+?>
